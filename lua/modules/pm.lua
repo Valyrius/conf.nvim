@@ -29,23 +29,7 @@ require("lazy").setup({
 	dependencies = {'nvim-lua/plenary.nvim'}},
 
     {'nvim-treesitter/nvim-treesitter',
-    build = ':TSUpdate',
-    config = function ()
-        local configs = require("nvim-treesitter.configs")
-        configs.setup({
-            ensure_installed = {
-                "vimdoc",
-                "javascript",
-                "c",
-                "lua",
-                "python"
-            },
-            sync_install = false,
-            auto_install = true,
-            highlight = {
-                enable = true,
-                additional_vim_regex_highlighting = false}})
-    end},
+    build = ':TSUpdate'},
     'nvim-treesitter/nvim-treesitter-context',
 
     {'VonHeikemen/lsp-zero.nvim',
