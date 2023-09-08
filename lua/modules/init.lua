@@ -1,3 +1,4 @@
+require("modules.pm")
 require("modules.set")
 require("modules.remap")
 
