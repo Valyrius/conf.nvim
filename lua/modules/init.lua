@@ -1,6 +1,6 @@
-require("modules.pm")
 require("modules.set")
 require("modules.remap")
+require("modules.pm")
 
 local augroup = vim.api.nvim_create_augroup
 local usefulGroup = augroup('Useful', {})
