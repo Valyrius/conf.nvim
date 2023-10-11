@@ -12,9 +12,9 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-    {'Mofiqul/dracula.nvim',
+    {'bluz71/vim-moonfly-colors',
         config = function()
-            vim.cmd('colorscheme dracula')
+            vim.cmd('colorscheme moonfly')
         end},
 
     'theprimeagen/harpoon',
