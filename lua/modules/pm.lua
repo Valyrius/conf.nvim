@@ -12,11 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-    {'bluz71/vim-moonfly-colors',
-        config = function()
-            vim.cmd('colorscheme moonfly')
-        end},
-
+    'bluz71/vim-moonfly-colors',
     'theprimeagen/harpoon',
     'mbbill/undotree',
     'andweeb/presence.nvim',
