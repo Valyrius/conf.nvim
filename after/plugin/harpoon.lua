@@ -6,9 +6,8 @@ main.setup({
     tabline = true
 })
 
-vim.keymap.set("n", "<leader>a", mark.add_file)
+vim.keymap.set("n", "<A-s>", mark.add_file)
 vim.keymap.set("n", "<A-w>", ui.toggle_quick_menu)
-
 vim.keymap.set("n", "<A-d>", ui.nav_next)
 vim.keymap.set("n", "<A-a>", ui.nav_prev)
 
