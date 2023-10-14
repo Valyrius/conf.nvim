@@ -16,7 +16,6 @@ require("lazy").setup({
     'theprimeagen/harpoon',
     'mbbill/undotree',
     'andweeb/presence.nvim',
-    'dstein64/nvim-scrollview',
 
     {'nvim-lualine/lualine.nvim',
         dependencies = {'nvim-tree/nvim-web-devicons'}},
