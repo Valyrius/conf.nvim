@@ -12,22 +12,35 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-    'bluz71/vim-moonfly-colors',
     'theprimeagen/harpoon',
     'mbbill/undotree',
     'andweeb/presence.nvim',
+    'RRethy/vim-illuminate',
+
+    {'bluz71/vim-moonfly-colors',
+        config = function()
+            vim.cmd('colorscheme moonfly')
+        end},
 
     {'nvim-lualine/lualine.nvim',
-        dependencies = {'nvim-tree/nvim-web-devicons'}},
+        dependencies = {'nvim-tree/nvim-web-devicons'},
+        config = function()
+            require("lualine").setup({})
+        end},
 
     {'nvim-telescope/telescope.nvim',
         branch = '0.1.x',
         dependencies = {'nvim-lua/plenary.nvim'}},
 
     {'nvim-treesitter/nvim-treesitter',
-        build = ':TSUpdate'},
+        build = ':TSUpdate',
+        dependencies = {'nvim-treesitter/nvim-treesitter-context'}},
 
-    'nvim-treesitter/nvim-treesitter-context',
+    {"shellRaining/hlchunk.nvim",
+        event = { "UIEnter" },
+        config = function()
+            require("hlchunk").setup({})
+        end},
 
     {'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
