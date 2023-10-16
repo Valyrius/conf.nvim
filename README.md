@@ -1,1 +1,1 @@
-![preview](https://github.com/Valyrius/conf.nvim/assets/51477242/d01c574b-a2f2-466a-9b99-5bb9d1d10fbe)
+![image](https://github.com/Valyrius/conf.nvim/assets/51477242/78ba3993-51d3-4e31-aa39-3b6fc4c12c10)
