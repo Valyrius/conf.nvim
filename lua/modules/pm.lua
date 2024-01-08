@@ -14,7 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     'theprimeagen/harpoon',
     'mbbill/undotree',
-    'andweeb/presence.nvim',
+    'ObserverOfTime/nvimcord',
     'RRethy/vim-illuminate',
 
     {'bluz71/vim-moonfly-colors',
