@@ -12,6 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+    'sbdchd/neoformat',
     'theprimeagen/harpoon',
     'mbbill/undotree',
     'ObserverOfTime/nvimcord',
